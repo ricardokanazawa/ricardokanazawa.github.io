@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <form action="https://www.w3schools.com/action_page.php" method="POST">
+        <!--        
+        <p>
+            <label for="opcaoM">Digite seu nome:</label>
+        </p>
+        -->
+        <input autofocus type="text" name="nome" id="nome" placeholder="Nome" size="100" maxlength="100" required>
+
+        <p>Escolha o seu gênero:</p>
+        <input type="radio" name="genero" value="m" id="opcaoM">
+        <label for="opcaoM">Masculino</label>
+        <br>
+
+        <input type="radio" name="genero" value="f" id="opcaoF">
+        <label for="opcaoF">Feminino</label>
+
+        <br><br>
+        <label for="alunos2">Alunos mais legais:</label> <br>
+        <input list="alunos" name="alunoMaisLegal" id="alunos2" type="text">
+        <datalist id="alunos">
+            <option value="Pedro">Pedro Gabriel</option>
+            <option value="Eudemir">Eudemir</option>
+            <option value="Gabrielle">Gabrielle Lima</option>
+        </datalist>
+
+        <br><br>
+        <p>Qual o professor mais legal?</p>
+        <select name="professor">
+            <option value="Ricardo">Ricardo</option>
+            <option value="Kanazawa">Kanazawa</option>
+            <option value="John">John wick</option>
+        </select>
+
+        <br><br>
+        Digite uma frase motivacional: <br>
+        <textarea name="frase" cols="100" rows="10" placeholder="Digite algo bonito"></textarea>
+
+
+        <p>
+            <button type="submit">Cadastrar!</button>
+        </p>
+    </form>
+</body>
+
+</html>
